@@ -24,7 +24,6 @@ export default function RecipeCard({ recipe }) {
           </Link>
         </div>
       </div>
-      {recipe.fields.title}
 
       <style jsx>
         {`
