@@ -63,7 +63,9 @@ export default function RecipeDetails({ recipe }) {
       <div className="method">
         <h3>Method:</h3>
         <div>{documentToReactComponents(method)}</div>
-        <Link href="/">Back to start</Link>
+        <Link href="/">
+          <button className="backbutton">Back to start</button>
+        </Link>
       </div>
 
       <style jsx>
@@ -91,6 +93,14 @@ export default function RecipeDetails({ recipe }) {
           }
           .info span:last-child::after {
             content: ".";
+          }
+          .backbutton {
+            padding: 22px;
+            border: none;
+            background: #9fa6fc;
+            color: white;
+            font-size: 22px;
+            margin-top: 2em;
           }
         `}
       </style>
