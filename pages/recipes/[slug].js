@@ -1,6 +1,6 @@
 import { createClient } from "contentful"
-import Image from "next/image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Image from "next/image"
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-export async function getStaticProps({ params }) {
+export const getStaticProps = async ({ params }) => {
   const { items } = await client.getEntries({
     content_type: "recipe",
     "fields.slug": params.slug,
@@ -55,7 +55,7 @@ export default function RecipeDetails({ recipe }) {
         <h3>
           Ingredients:
           {ingredients.map((ing) => (
-            <span key={ing}>{ing}</span>
+            <span key={ing}> {ing}</span>
           ))}
         </h3>
       </div>
