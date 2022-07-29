@@ -1,6 +1,7 @@
 import { createClient } from "contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image"
+import Link from "next/link"
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -62,7 +63,9 @@ export default function RecipeDetails({ recipe }) {
       <div className="method">
         <h3>Method:</h3>
         <div>{documentToReactComponents(method)}</div>
+        <Link href="/">Back to start</Link>
       </div>
+
       <style jsx>
         {`
           h2,

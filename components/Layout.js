@@ -7,8 +7,8 @@ export default function Layout({ children }) {
         <Link href="/">
           <a>
             <h1>
-              <span>Just Add</span>
-              <span>Marmite</span>
+              <span>Recipes</span>
+              <span>For you</span>
             </h1>
             <h2>Spread The Joy</h2>
           </a>
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       <div className="page-content">{children}</div>
 
       <footer>
-        <p>Copyright 2021 Just Add Marmite :)</p>
+        <p>Built with NextJS, Contentful and Vercel</p>
       </footer>
     </div>
   )
