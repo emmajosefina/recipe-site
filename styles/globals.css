@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-  background: #F4E640;
+  background: #fcf6ab;
   margin: 0;
   font-family: 'Roboto';
   font-size: 1.5em;  
@@ -41,8 +41,8 @@ header h2 {
   font-weight: 400;
 }
 footer {
-  background: #111;
-  color: #bbb;
+  background: #DFE1FE;
+  color: #22084d;
   padding: 40px;
   text-align: center;
   margin-top: auto
